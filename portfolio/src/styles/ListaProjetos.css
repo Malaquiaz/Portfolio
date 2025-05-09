@@ -1,0 +1,54 @@
+.projetos-container {
+  padding: 20px;
+}
+
+.projetos-lista {
+  border: 1px solid black;
+  max-height: 300px; /* Limita a altura da lista */
+  overflow-y: auto; /* Ativa o scroll vertical */
+  overflow-x: hidden; /* Sem scroll horizontal */
+  padding-right: 10px; /* Espaço para não cortar o scroll */
+}
+
+/* Adiciona uma barra de rolagem fina e bonita (opcional) */
+.projetos-lista::-webkit-scrollbar {
+  width: 6px;
+}
+
+.projetos-lista::-webkit-scrollbar-thumb {
+  background-color: #87CEFA;
+  border-radius: 3px;
+}
+
+.projeto-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.projeto-texto {
+  font-weight: bold;
+}
+
+.projeto-botao {
+  background-color: #ADD8E6;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.projeto-botao:hover {
+  background-color: #87CEFA;
+}
+
+.projeto-icone {
+  color: black;
+  font-size: 20px;
+}
