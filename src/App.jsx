@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 import './styles/App.css'; // ou o seu principal de estilos
 
 import Home from './pages/Home';
@@ -9,7 +9,7 @@ import Sobre from './pages/Sobre';
 function App() {
   return (
     <>
-      <Header />
+      <NavBar />
       <section id="home">
         <Home />
       </section>

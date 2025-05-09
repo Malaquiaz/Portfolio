@@ -1,42 +1,195 @@
-#root {
-  max-width: 1280px;
+/* Importação das fontes personalizadas */
+@font-face {
+  font-family: 'RolloutSemiboldOblique';
+  src: url('../assets/fonts/RolloutSemiboldOblique-m2DM9.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'RolloutSemibold';
+  src: url('../assets/fonts/RolloutSemibold-drdER.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'RolloutBold';
+  src: url('../assets/fonts/RolloutBold-woZXz.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'RolloutBoldOblique';
+  src: url('../assets/fonts/RolloutBoldOblique-7OqMV.otf') format('opentype');
+}
+
+/* Estilização global */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fdf7ec; /* Um tom mais suave que o bege anterior */
+  font-family: 'RolloutSemibold', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Container principal */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #333;
+}
+
+
+/* Navegação */
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav ul li a {
+  color: #FBC241;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+
+.nav ul li a:hover {
+  color: #ffd466;
+  box-shadow: 0 5px 0 #FBC241 inset;
+}
+
+.nav ul li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #FBC241;
+  transition: width 0.3s;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+/* Seções */
+section {
+  padding: 80px 20px;
+}
+
+/* Títulos principais */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'RolloutBoldOblique', sans-serif;
+  margin-bottom: 20px;
+  color: #274EAC;
+}
+
+/* Texto comum */
+p {
+  font-family: 'RolloutSemiboldOblique', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #417AFB;
+  padding: 1rem;
+  height: 70px; /* Altura fixa */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: #FBC241;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'RolloutSemibold', sans-serif;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #ffd466;
+}
+
+/* Header */
+.home {
+  min-height: 100vh;
+  padding: 70px 20px 40px; /* Agora o padding-top é igual à altura da navbar */
+  text-align: center;
+  background: linear-gradient(135deg, #417AFB 0%, #274EAC 100%);
+  color: white;
+  font-family: 'RolloutSemibold', sans-serif;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+/* Página Sobre Mim */
+.sobre {
+  padding: 80px 20px;
+  background-color: #feefdc;
+  color: #333;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.sobre h1 {
+  font-size: 2.5rem;
+  color: #417AFB;
+  margin-bottom: 40px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sobre-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'RolloutSemiboldOblique', sans-serif;
+  line-height: 1.8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.sobre-info p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.sobre-info strong {
+  color: #FBC241;
 }
