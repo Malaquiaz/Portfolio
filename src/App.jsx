@@ -5,6 +5,8 @@ import './styles/App.css'; // ou o seu principal de estilos
 import Home from './pages/Home';
 import Projetos from './pages/Projetos';
 import Sobre from './pages/Sobre';
+import Contato from './pages/Contato';
+
 
 function App() {
   return (
@@ -19,6 +21,10 @@ function App() {
       <section id="sobre">
         <Sobre />
       </section>
+      <section id="contato">
+        <Contato />
+      </section>
+      
     </>
   );
 }
