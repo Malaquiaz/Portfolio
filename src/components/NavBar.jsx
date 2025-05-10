@@ -6,9 +6,9 @@ function NavBar() {
   const location = useLocation();
 
   const handleNavigation = (id) => {
-    if (location.pathname !== "/portfolio/") {
+    if (location.pathname !== "/") {
       // Se não está na home, volta para a home primeiro
-      navigate(`/#${id}`);
+      navigate(`portfolio/#${id}`);
       // Deixar o scroll para depois de voltar para home
       setTimeout(() => {
         const element = document.getElementById(id);
