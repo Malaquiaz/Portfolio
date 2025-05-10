@@ -8,8 +8,8 @@ function Projetos() {
       <div className="projetos-texto">
       <h1>Meus projetos</h1>
       <p>A lista abaixo contém alguns dos projetos feitos durante minha formação</p>
-      <ListaProjetos /> 
       </div>
+      <ListaProjetos /> 
     </div>
   );
 }
