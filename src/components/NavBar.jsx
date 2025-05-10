@@ -1,14 +1,37 @@
 import React from 'react';
-//import '../styles/NavBar.css';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function NavBar() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavigation = (id) => {
+    if (location.pathname !== "/portfolio/") {
+      // Se não está na home, volta para a home primeiro
+      navigate(`/#${id}`);
+      // Deixar o scroll para depois de voltar para home
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); 
+    } else {
+      // Se já está na home
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <nav className="navbar">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li onClick={() => handleNavigation('home')}>Home</li>
+        <li onClick={() => handleNavigation('projetos')}>Projetos</li>
+        <li onClick={() => handleNavigation('sobre')}>Sobre</li>
+        <li onClick={() => handleNavigation('contato')}>Contato</li>
       </ul>
     </nav>
   );

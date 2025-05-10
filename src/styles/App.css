@@ -90,7 +90,7 @@ section {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'RolloutBold', sans-serif;
   margin-bottom: 20px;
-  color: #274EAC;
+  color: #417AFB;
 }
 
 /* Texto comum */
@@ -104,7 +104,7 @@ p {
 .navbar {
   background-color: #FBC241;
   padding: 1rem;
-  height: auto;
+  height: 50px;
   position: fixed;
   width: 33.33%;
   top: 0;
@@ -152,7 +152,7 @@ p {
   }
 }
 
-.navbar a {
+.navbar li {
   color: #1157c9;
   text-decoration: none;
   font-weight: bold;
@@ -161,7 +161,7 @@ p {
   transition: 0.3s ease;
 }
 
-.navbar a:hover {
+.navbar li:hover {
   text-decoration: underline;
   color: #89a3fc;
 }
