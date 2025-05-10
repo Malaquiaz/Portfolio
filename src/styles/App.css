@@ -105,7 +105,7 @@ p {
 .navbar {
   background-color: #FBC241;
   padding: 1rem;
-  height: 25px;
+  height: auto;
   position: fixed;
   width: 33.33%;
   top: 0;
@@ -117,28 +117,12 @@ p {
   border-bottom-left-radius: 30px;
 }
 
-/* Quando a tela for menor que 768px (tablet/celular) */
-@media (max-width: 768px) {
-  .navbar {
-    width: 100%; /* Ocupa toda a largura */
-    border-bottom-left-radius: 0; /* Remove o arredondamento */
-    justify-content: center; /* Continua centralizando */
-  }
-
-  .navbar ul {
-    flex-direction: line; /* Empilha os itens */
-    gap: 0.5rem; /* Espaço entre os links */
-  }
-
-  .navbar li {
-    margin: 0.5rem 0; /* Margem apenas vertical */
-  }
-}
-
 /* Seus estilos de lista e links continuam */
 .navbar ul {
   list-style: none;
   display: flex;
+  width: 100%; /* <-- adicione isso */
+  justify-content: space-around; /* <-- isso distribui igualmente */
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -146,6 +130,28 @@ p {
 
 .navbar li {
   margin: 0 1rem;
+}
+
+/* Quando a tela for menor que 768px (tablet/celular) */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%; /* Ocupa toda a largura */
+    border-bottom-left-radius: 0; /* Remove o arredondamento */
+    justify-content: center; /* Continua centralizando */
+    border-bottom-left-radius: 30px;
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+
+  .navbar ul {
+    flex-direction: row; /* Empilha os itens */
+    align-items: center;
+    gap: 0.5rem; /* Espaço entre os links */
+  }
+
+  .navbar li {
+    margin: 0.5rem 0; /* Margem apenas vertical */
+  }
 }
 
 .navbar a {

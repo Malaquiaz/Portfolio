@@ -9,8 +9,8 @@ import amarelo2 from '../assets/project_icons/amarelo2.png';
 function ListaProjetos() {
   const projetos = [
     { id: 1, nome: "Projeto", link: "https://github.com/Malaquiaz/projeto1", imagem: cinza1, descricao: "Testezinho" },
-    { id: 2, nome: "aishjdiasd", link: "https://github.com/Malaquiaz/projeto2", imagem: azul1, descricao: "" },
-    { id: 3, nome: "aishjdiasd", link: "https://github.com/Malaquiaz/projeto3", imagem: amarelo2, descricao: "" },
+    { id: 2, nome: "Semáforo", link: "https://github.com/Malaquiaz/projeto2", imagem: azul1, descricao: "Controlador de semáforo feito com arduíno" },
+    { id: 3, nome: "QRCode App", link: "https://github.com/Malaquiaz/projeto3", imagem: amarelo2, descricao: "Leitor QR code para validação de ingressos em eventos" },
     // continue...
   ];
 
