@@ -1,4 +1,3 @@
-/* Importação das fontes personalizadas */
 @font-face {
   font-family: 'RolloutSemiboldOblique';
   src: url('../assets/fonts/RolloutSemiboldOblique-m2DM9.ttf') format('opentype');
@@ -24,7 +23,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #edf0ff; /* Um tom mais suave que o bege anterior */
+  background: #edf0ff; 
   font-family: 'RolloutSemibold', sans-serif;
   scroll-behavior: smooth;
 }
@@ -117,12 +116,11 @@ p {
   border-bottom-left-radius: 30px;
 }
 
-/* Seus estilos de lista e links continuam */
 .navbar ul {
   list-style: none;
   display: flex;
-  width: 100%; /* <-- adicione isso */
-  justify-content: space-around; /* <-- isso distribui igualmente */
+  width: 100%; 
+  justify-content: space-around; 
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -135,22 +133,22 @@ p {
 /* Quando a tela for menor que 768px (tablet/celular) */
 @media (max-width: 768px) {
   .navbar {
-    width: 100%; /* Ocupa toda a largura */
-    border-bottom-left-radius: 0; /* Remove o arredondamento */
-    justify-content: center; /* Continua centralizando */
+    width: 100%; 
+    justify-content: center; 
     border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     padding-right: 3px;
     padding-left: 3px;
   }
 
   .navbar ul {
-    flex-direction: row; /* Empilha os itens */
+    flex-direction: row; 
     align-items: center;
     gap: 0.5rem; /* Espaço entre os links */
   }
 
   .navbar li {
-    margin: 0.5rem 0; /* Margem apenas vertical */
+    margin: 0.5rem 0; 
   }
 }
 
@@ -172,12 +170,23 @@ p {
 /* Cabeçalho*/
 .home {
   min-height: 100vh;
-  padding: 70px 20px 40px; /* Agora o padding-top é igual à altura da navbar */
+  padding: 5px 20px 40px; 
   text-align: center;
-  background: linear-gradient(135deg, #89a3fc 0%, #417AFB 100%);
+  background: linear-gradient(135deg, #417AFB 0%, #417AFB 100%);
   color: white;
   font-family: 'RolloutSemibold', sans-serif;
   box-sizing: border-box;
+}
+
+.home-imagem {
+  width: 65%; 
+  height: auto;
+  display: block;
+  margin: 20px auto; 
+  border-radius: 30px; 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); 
+  transition: opacity 0.5s ease-in-out; 
+  opacity: 0.85; 
 }
 
 .home h1 {
@@ -190,6 +199,9 @@ p {
 .home p {
   font-size: 1.2rem;
   line-height: 1.6;
+  padding-top: 10px ;
+  padding-bottom: 40px;
+  font-size: x-large;
   max-width: 800px;
   margin: 0 auto;
   color: #feefdc;
@@ -219,9 +231,9 @@ p {
 
 .sobre-info p {
   margin-bottom: 15px;
-  font-size: 1.1rem;
+  font-size:x-large;
 }
 
 .sobre-info strong {
-  color: #FBC241;
+  color: #417AFB;
 }

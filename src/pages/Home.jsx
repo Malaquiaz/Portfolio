@@ -1,18 +1,17 @@
 import React from 'react';
-//import '../styles/Home.css'; // Certifique-se de criar esse arquivo de estilo!
+import Avatar from '../assets/avatar.png';
 
 function Home() {
   return (
     <div className="home">
-      <h1>Bem-vindo ao meu Portfólio</h1>
+      <h1>Higor Franca</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. 
-        Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.
-        {/* Repetições omitidas para simplificar */}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. 
-        Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.
-        {/* Adicione quantas repetições quiser */}
+        Bem-vindo ao meu portfólio. Logo abaixo, você poderá conhecer um pouco mais sobre mim e o que eu faço.
       </p>
+      <img 
+        src={Avatar}
+        className="home-imagem"
+      />
     </div>
   );
 }

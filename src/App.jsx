@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './components/NavBar';
-import './styles/App.css'; // ou o seu principal de estilos
+import './styles/App.css'; 
 
 import Home from './pages/Home';
 import Projetos from './pages/Projetos';
