@@ -25,11 +25,11 @@ function App() {
             <section id="home">
               <Home />
             </section>
-            <section id="projetos">
-              <Projetos />
-            </section>
             <section id="sobre">
               <Sobre />
+            </section>
+            <section id="projetos">
+              <Projetos />
             </section>
             <section id="contato">
               <Contato />

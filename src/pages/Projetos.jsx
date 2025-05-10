@@ -5,9 +5,11 @@ import ListaProjetos from "../components/ListaProjetos";
 function Projetos() {
   return (
     <div className="projetos-container">
+      <div className="projetos-texto">
       <h1>Meus projetos</h1>
-      <p>Alguns Projetos</p>
+      <p>A lista abaixo contém alguns dos projetos feitos durante minha formação</p>
       <ListaProjetos /> 
+      </div>
     </div>
   );
 }

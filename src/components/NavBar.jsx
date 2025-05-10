@@ -29,8 +29,8 @@ function NavBar() {
     <nav className="navbar">
       <ul>
         <li onClick={() => handleNavigation('home')}>Home</li>
-        <li onClick={() => handleNavigation('projetos')}>Projetos</li>
         <li onClick={() => handleNavigation('sobre')}>Sobre</li>
+        <li onClick={() => handleNavigation('projetos')}>Projetos</li>
         <li onClick={() => handleNavigation('contato')}>Contato</li>
       </ul>
     </nav>

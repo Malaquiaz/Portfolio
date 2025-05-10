@@ -128,42 +128,40 @@ p {
 
 .navbar li {
   margin: 0 1rem;
-}
-
-/* Quando a tela for menor que 768px (tablet/celular) */
-@media (max-width: 768px) {
-  .navbar {
-    width: 100%; 
-    justify-content: center; 
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding-right: 3px;
-    padding-left: 3px;
-  }
-
-  .navbar ul {
-    flex-direction: row; 
-    align-items: center;
-    gap: 0.5rem; /* Espaço entre os links */
-  }
-
-  .navbar li {
-    margin: 0.5rem 0; 
-  }
-}
-
-.navbar li {
   color: #1157c9;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Rolloutsemibold', sans-serif;
-  font-size: x-large;
+  font-family: 'RolloutBold', sans-serif;
+  font-size: xx-large;
   transition: 0.3s ease;
 }
 
 .navbar li:hover {
   text-decoration: underline;
-  color: #89a3fc;
+  color: #021b49;
+}
+
+
+/* Quando a tela for menor que 1024px (tablet/celular) */
+@media (max-width: 1024px) {
+  .navbar {
+    width: 100%; 
+    justify-content: center; 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 1px;
+  }
+
+  .navbar ul {
+    flex-direction: row; 
+    align-items: center;
+    gap: 1rem; /* Espaço entre os links */
+  }
+
+  .navbar li {
+    margin: 0.5rem 0;
+    font-size: x-large;
+  }
 }
 
 
@@ -172,12 +170,14 @@ p {
   min-height: 100vh;
   padding: 5px 20px 40px; 
   text-align: center;
-  background: linear-gradient(135deg, #417AFB 0%, #417AFB 100%);
+  background: url('../assets/fundohome.png') no-repeat center center;
+  background-size: cover;
   color: white;
   font-family: 'RolloutSemibold', sans-serif;
   box-sizing: border-box;
 }
 
+/*
 .home-imagem {
   width: 65%; 
   height: auto;
@@ -187,6 +187,10 @@ p {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); 
   transition: opacity 0.5s ease-in-out; 
   opacity: 0.85; 
+}*/
+
+.home h1, .home p {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 .home h1 {
@@ -239,13 +243,27 @@ p {
 }
 
 .sobre-imagem {
-  width: 30%; 
+  width: 50%; 
   height: auto;
   display: block;
   margin: 20px auto; 
   border-radius: 30px; 
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); 
   transition: opacity 0.5s ease-in-out; 
-  opacity: 0.85; 
+  opacity: 0.85;
+  margin-bottom: 40px;
 }
 
+/*pagina projetos*/
+
+.projetos-texto {
+  text-align: center;
+}
+
+.projetos-texto p {
+  font-size: x-large ;
+}
+
+.projetos-texto h1 {
+  font-size: 2.5rem ;
+}
