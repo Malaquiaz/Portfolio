@@ -17,7 +17,7 @@
     "id": 2,
     "nome": "Sistema de Irrigação",
     "resumo": "Controle de irrigação feito com ESP32",
-    "descricao": "teste",
+    "descricao": "Além de automatizar o acionamento e o desligamento, o sistema também registra e armazena os dados de funcionamento da irrigação. Todas as informações coletadas são enviadas para um servidor, garantindo o monitoramento e a gestão eficiente do processo.",
     "imagem": "github.png",
     "capturasDeTela": [],
     "video": "https://youtube.com/embed/CVKBHdNCKC8",
