@@ -55,11 +55,11 @@
   font-size: x-large;
 }
 
-.projeto-descricao {
+.projeto-resumo {
   font-weight: normal; 
   font-family: 'RolloutSemibold', sans-serif;
   color: #1c1c1b;
-  font-size: large; 
+  font-size: x-large; 
   margin-top: 8px; 
   line-height: 1.5; 
 }
@@ -139,11 +139,11 @@
   flex-grow: 1;
   font-family: 'RolloutSemibold', sans-serif;
   color: #274EAC;
-  font-size: large;
+  font-size: medium;
 }
 
-.projeto-descricao {
-  font-weight: normal; 
+.projeto-resumo { 
+  font-weight: normal;
   font-family: 'RolloutSemibold', sans-serif;
   color: #1c1c1b;
   font-size:small; 

@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import projetos from "../assets/projetos.json";
 import "../styles/ListaProjetos.css"; 
-import miniaturas from "./miniaturas";
+import miniaturas from "../assets/miniaturas";
 
 function ListaProjetos() {
   return (
@@ -17,8 +17,8 @@ function ListaProjetos() {
 
           <div className="projeto-info">
             <span className="projeto-titulo">{projeto.nome}</span>
-            {projeto.descricao && (
-              <span className="projeto-descricao">{projeto.descricao}</span>
+            {projeto.resumo && (
+              <span className="projeto-resumo">{projeto.resumo}</span>
             )}
           </div>
           <Link

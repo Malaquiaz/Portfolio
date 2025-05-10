@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
-import projetos from "../assets/projetos.json"; // importa os dados JSON
-import "../styles/ProjetoDetalhes.css"; 
+import projetos from "../assets/projetos.json";
+import "../styles/ProjetoDetalhes.css";
+import capturas from "../assets/capturas";
 
 function ProjetoDetalhes() {
   const { id } = useParams();
   const projeto = projetos.find((p) => p.id === parseInt(id));
+
+  const [imagemAmpliada, setImagemAmpliada] = useState(null);
 
   if (!projeto) {
     return <div>Projeto não encontrado.</div>;
@@ -18,14 +22,23 @@ function ProjetoDetalhes() {
       {projeto.capturasDeTela.length > 0 && (
         <div className="capturas">
           <h2>Capturas de Tela</h2>
-          {projeto.capturasDeTela.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              alt={`Captura de tela ${index + 1}`}
-              className="captura-img"
-            />
-          ))}
+          <div className="captura-grid">
+            {projeto.capturasDeTela.map((img, index) => (
+              <img
+                key={index}
+                src={capturas[img]}
+                alt={`Captura de tela ${index + 1}`}
+                className="captura-img"
+                onClick={() => setImagemAmpliada(capturas[img])}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {imagemAmpliada && (
+        <div className="image-modal" onClick={() => setImagemAmpliada(null)}>
+          <img src={imagemAmpliada} alt="Imagem ampliada" />
         </div>
       )}
 

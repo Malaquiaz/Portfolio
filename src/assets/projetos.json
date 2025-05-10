@@ -2,7 +2,8 @@
   {
     "id": 1,
     "nome": "Projeto Integrador 5º Semestre",
-    "descricao": "Projeto integrador realizado em conjunto com o restante da sala",
+    "resumo": "Projeto integrador realizado em conjunto com o restante da sala",
+    "descricao": "teste",
     "imagem": "github.png",
     "capturasDeTela": [
       "/assets/project_icons/cinza1.png",
@@ -14,21 +15,39 @@
   {
     "id": 2,
     "nome": "Sistema de Irrigação",
-    "descricao": "Sistema de irrigação feito com arduíno",
+    "resumo": "Controle de irrigação feito com ESP32",
+    "descricao": "teste",
     "imagem": "github.png",
     "capturasDeTela": [
       "/assets/project_screenshots/semaforo_img1.png"
     ],
-    "video": "",
-    "linkRepositorio": "https://github.com/Malaquiaz/projeto2"
+    "video": "https://youtube.com/embed/CVKBHdNCKC8",
+    "linkRepositorio": "https://github.com/Malaquiaz/sistema-irrigador"
   },
   {
     "id": 3,
     "nome": "Biblioteca Virtual",
-    "descricao": "Biblioteca virtual semelhante ao Kindle. (Disp. Móveis)",
+    "resumo": "Biblioteca virtual semelhante ao Kindle. (Disp. Móveis)",
+    "descricao": "teste",
     "imagem": "expo.png",
     "capturasDeTela": [],
-    "video": "https://www.youtube.com/embed/outro_video_id",
+    "video": "https://www.youtube.com/embed/qFb9tCLEtdk?si=TVuZYgTK3cn2PAZj",
     "linkRepositorio": "https://github.com/Malaquiaz/projeto3"
+  },
+
+  {
+    "id": 4,
+    "nome": "QR Code App",
+    "resumo": "Autenticador com QR Code",
+    "descricao": "O QR Code App é dividido em usuário e administrador. O usuário guarda o seu convite (QR code) e o administrador faz a função de gerar e ler o QR code dos usuários. Ambas aplicações são feitas para dispositivos móveis.",
+    "imagem": "github.png",
+    "capturasDeTela": ["cap1qrcode.jpg",
+                       "cap2qrcode.jpg",
+                       "cap3qrcode.jpg",
+                       "cap4qrcode.jpg",
+                       "cap5qrcode.jpg"
+],
+    "video": "",
+    "linkRepositorio": ""
   }
 ]
