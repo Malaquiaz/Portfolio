@@ -3,7 +3,7 @@
     "id": 1,
     "nome": "Projeto Integrador 5º Semestre",
     "descricao": "Projeto integrador realizado em conjunto com o restante da sala",
-    "imagem": "/assets/project_icons/github.png",
+    "imagem": "/assets/github.png",
     "capturasDeTela": [
       "/assets/project_icons/cinza1.png",
       "/assets/project_screenshots/projeto1_img2.png"
