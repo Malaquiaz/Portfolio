@@ -3,7 +3,7 @@
     "id": 1,
     "nome": "Projeto Integrador 5º Semestre",
     "descricao": "Projeto integrador realizado em conjunto com o restante da sala",
-    "imagem": "/miniaturas/github.png",
+    "imagem": "github.png",
     "capturasDeTela": [
       "/assets/project_icons/cinza1.png",
       "/assets/project_screenshots/projeto1_img2.png"
@@ -13,9 +13,9 @@
   },
   {
     "id": 2,
-    "nome": "Semáforo",
-    "descricao": "Controlador de semáforo feito com arduíno",
-    "imagem": "src/assets/project_icons/github.png",
+    "nome": "Sistema de Irrigação",
+    "descricao": "Sistema de irrigação feito com arduíno",
+    "imagem": "github.png",
     "capturasDeTela": [
       "/assets/project_screenshots/semaforo_img1.png"
     ],
@@ -24,9 +24,9 @@
   },
   {
     "id": 3,
-    "nome": "QRCode App",
-    "descricao": "Leitor QR code para validação de ingressos em eventos",
-    "imagem": "src/assets/project_icons/github.png",
+    "nome": "Biblioteca Virtual",
+    "descricao": "Biblioteca virtual semelhante ao Kindle. (Disp. Móveis)",
+    "imagem": "expo.png",
     "capturasDeTela": [],
     "video": "https://www.youtube.com/embed/outro_video_id",
     "linkRepositorio": "https://github.com/Malaquiaz/projeto3"
