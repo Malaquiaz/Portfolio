@@ -1,54 +1,85 @@
 .projetos-container {
-  padding: 20px;
+  padding: 20px
 }
 
 .projetos-lista {
-  border: 1px solid black;
-  max-height: 300px; /* Limita a altura da lista */
-  overflow-y: auto; /* Ativa o scroll vertical */
+  border: 2px solid #1157c9;
+  max-height: 600px; /* Limita a altura da lista */
+  overflow-y: auto; /* Scroll vertical */
   overflow-x: hidden; /* Sem scroll horizontal */
   padding-right: 10px; /* Espaço para não cortar o scroll */
+  background-color: #eef0fb; /* fundo mais claro, fica bonito */
 }
 
-/* Adiciona uma barra de rolagem fina e bonita (opcional) */
+/* Barra de rolagem fina e estilizada */
 .projetos-lista::-webkit-scrollbar {
   width: 6px;
 }
 
 .projetos-lista::-webkit-scrollbar-thumb {
-  background-color: #87CEFA;
+  background-color: #274EAC;
   border-radius: 3px;
 }
 
 .projeto-item {
   display: flex;
+  align-items: flex-start; /* alinhamento no topo */
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
-  border-bottom: 1px solid black;
+  /*border-bottom: 2px solid #FBC241;*/
+  gap: 10px; /* espaço entre imagem e texto */
 }
 
-.projeto-texto {
+.projeto-imagem {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0; /* não deixa a imagem deformar */
+}
+
+.projeto-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.projeto-titulo {
+  display: flex; /* <<< adiciona isso */
+  flex-direction: column; /* <<< adiciona isso */
   font-weight: bold;
+  flex-grow: 1;
+  font-family: 'RolloutSemibold', sans-serif;
+  color: #274EAC;
+  font-size: x-large;
+}
+
+.projeto-descricao {
+  font-weight: normal; /* geralmente descrição é normal, não bold */
+  font-family: 'RolloutSemibold', sans-serif;
+  color: #1c1c1b;
+  font-size: large; /* x-large pode ficar muito grande para descrição */
+  margin-top: 8px; /* espaço abaixo do título */
+  line-height: 1.5; /* melhor leitura */
 }
 
 .projeto-botao {
-  background-color: #ADD8E6;
+  background-color: #FBC241;
   width: 40px;
-  height: 40px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  flex-shrink: 0; /* mantém o botão pequeno */
 }
 
 .projeto-botao:hover {
-  background-color: #87CEFA;
+  background-color: #cb9d32;
 }
 
 .projeto-icone {
-  color: black;
+  color: #1157c9;
   font-size: 20px;
 }
