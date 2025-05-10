@@ -237,3 +237,15 @@ p {
 .sobre-info strong {
   color: #417AFB;
 }
+
+.sobre-imagem {
+  width: 30%; 
+  height: auto;
+  display: block;
+  margin: 20px auto; 
+  border-radius: 30px; 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); 
+  transition: opacity 0.5s ease-in-out; 
+  opacity: 0.85; 
+}
+
