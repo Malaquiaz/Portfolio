@@ -1,8 +1,8 @@
 function Contato() {
   return (
-    <div className="sobre">
+    <div className="contato">
       <h1>Contato</h1>
-      <div className="sobre-info">
+      <div className="contato-info">
         <p><strong>Fale comigo:</strong> higor.franca@fatec.sp.gov.br</p>
 
       </div>

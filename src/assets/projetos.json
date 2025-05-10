@@ -1,13 +1,14 @@
 [
   {
     "id": 1,
-    "nome": "Projeto Integrador 5º Semestre",
+    "nome": "Projeto Integrador 5º Semestre - Rede Social DA",
     "resumo": "Projeto integrador realizado em conjunto com o restante da sala",
-    "descricao": "teste",
+    "descricao": "O projeto integrador do quinto semestre consiste em uma aplicação semelhante a uma rede social. Ela funciona apeans em dispositivos móveis e tem o intuito de promover interatividade entre membros da Faculdade de Tecnologia Jundiaí",
     "imagem": "github.png",
-    "capturasDeTela": [
-      "/assets/project_icons/cinza1.png",
-      "/assets/project_screenshots/projeto1_img2.png"
+    "capturasDeTela": [ "cap8dajd.png",
+                        "cap9dajd.png",
+                        "cap10dajd.png",
+                        "cap11dajd.png"
     ],
     "video": "",
     "linkRepositorio": "https://github.com/RubeeTo/Interdisciplinar.git"
@@ -18,9 +19,7 @@
     "resumo": "Controle de irrigação feito com ESP32",
     "descricao": "teste",
     "imagem": "github.png",
-    "capturasDeTela": [
-      "/assets/project_screenshots/semaforo_img1.png"
-    ],
+    "capturasDeTela": [],
     "video": "https://youtube.com/embed/CVKBHdNCKC8",
     "linkRepositorio": "https://github.com/Malaquiaz/sistema-irrigador"
   },
@@ -28,11 +27,11 @@
     "id": 3,
     "nome": "Biblioteca Virtual",
     "resumo": "Biblioteca virtual semelhante ao Kindle. (Disp. Móveis)",
-    "descricao": "teste",
+    "descricao": "Aplicativo móvel de biblioteca virtual feito com react-native. A aplicação foi inspirada no Kindle.",
     "imagem": "expo.png",
-    "capturasDeTela": [],
-    "video": "https://www.youtube.com/embed/qFb9tCLEtdk?si=TVuZYgTK3cn2PAZj",
-    "linkRepositorio": "https://github.com/Malaquiaz/projeto3"
+    "capturasDeTela": ["cap6livraria.png"],
+    "video": "",
+    "linkRepositorio": "https://snack.expo.dev/@malaquiaz/mp8---kindle"
   },
 
   {
@@ -46,8 +45,19 @@
                        "cap3qrcode.jpg",
                        "cap4qrcode.jpg",
                        "cap5qrcode.jpg"
-],
+    ],
     "video": "",
-    "linkRepositorio": ""
+    "linkRepositorio": "https://github.com/Malaquiaz/QrCode-app"
+  },
+
+  {
+    "id": 5,
+    "nome": "Youtube Clone - React Native",
+    "resumo": "Uma tentativa de clonar o Youtube utilizando React Native (Disp. Móveis)",
+    "descricao": "O clone do youtube focou apenas na exibição de conteúdo (vídeo). Pode conter erro na leitura dos arquivos de vídeo",
+    "imagem": "expo.png",
+    "capturasDeTela": ["cap7ytclone.png"],
+    "video": "",
+    "linkRepositorio": "https://snack.expo.dev/@malaquiaz/mp11---p3"
   }
 ]
